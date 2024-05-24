@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANBAK - Order Now</title>
+    <link rel="stylesheet" href="OrderNow.css">
+    <script defer src="Active-Bar.js"></script>
+    <script defer src="OrderNow.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INTRO PICTURE -->
+    <div class="intro-box">
+        <div class="intro-pic">
+            <img src="Resources/art-coffee-2.jpg">
+        </div>
+        <div class="intro-pic">
+            <img src="Resources/group-coffee.jpg">
+        </div>
+        <div class="intro-pic">
+            <img src="Resources/art-coffee.jpg">
+        </div>
+    </div>
+    
+    <div class="bodys">
+        <div class="container">
+            <div class="title">Order Now</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        <input type="text" placeholder="Enter your name" id="nameInput" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your phone number" id="phoneInput" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Your Order</span>
+                        <input type="text" placeholder="Enter your order" id="orderInput" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Additional Order</span>
+                        <input type="text" placeholder="Enter your other order" id="order2Input" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Quantity</span>
+                        <input type="text" placeholder="Enter your order quantity" id="quantityInput" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Delivery Time</span>
+                        <input type="datetime-local" id="dateInput" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" placeholder="Enter your address" id="addressInput" required>
+                    </div>
+                </div>
+                <div class="typeOrder-details">
+                    <input type="radio" name="typeOrder" id="point-1">
+                    <input type="radio" name="typeOrder" id="point-2">
+                    <span class="typeOrder-title">Order Type</span>
+                    <div class="category">
+                        <label for="point-1">
+                            <span class="point one"></span>
+                            <span class="typeOrder">Delivery</span>
+                        </label>
+                        <label for="point-2">
+                            <span class="point two"></span>
+                            <span class="typeOrder">Dine in</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <input type="radio" name="payment" id="dot-1">
+                    <input type="radio" name="payment" id="dot-2">
+                    <input type="radio" name="payment" id="dot-3">
+                    <input type="radio" name="payment" id="dot-4">
+                    <input type="radio" name="payment" id="dot-5">
+                    <span class="payment-title">Payment Method</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="payment">BCA</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="payment">DANA</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="payment">GoPay</span>
+                        </label>
+                        <label for="dot-4">
+                            <span class="dot four"></span>
+                            <span class="payment">OVO</span>
+                        </label>
+                        <label for="dot-5">
+                            <span class="dot five"></span>
+                            <span class="payment">ShopeePay</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="checkInputs()">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="part-footer">
+            <div class="part">
+                <h2>SANBAK Indonesia</h2>
+                <h1>Jl. Lingkar Bujur Kav. 11-20 Kemayoran, Jakarta Pusat 10620, Indonesia</h1>
+                <h1>Telp  : (+62) 21 987 6543</h1>
+                <h1>WA    : (+62) 812 0123 4567</h1>
+                <h1>Email : contact@sanbak.com</h1>
+            </div>
+
+            <div class="part">
+                <h2>Social Media</h2>
+                <a href="https://www.google.com/maps">Google Maps</a>
+                <a href="https://id-id.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.tiktok.com/id-ID/">TikTok</a>
+                <a href="https://twitter.com/?lang=id">Twitter</a>
+            </div>
+        </div>
+
+        <div class="copyright">&copy; Copyright SANBAK Indonesia 2023. All rights reserved</div>
+    </section>
+
+    <!-- BACK -->
+    <div class="back-button">
+        <a href="HomePage.html">BACK</a>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">SANBAK</div>
+        <div class="ham-button">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="HomePage.html">HOME</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+                <li><a href="Menus.html">MENUS</a></li>
+                <li><a href="Facilities.html">FACILITIES</a></li>
+                <li><a class="active" href="OrderNow.html">ORDER NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
